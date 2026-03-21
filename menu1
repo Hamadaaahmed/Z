@@ -3,7 +3,7 @@
 SERVICE_NAME="zivpn"
 BINARY_PATH="/usr/local/bin/zivpn-server"
 SERVICE_FILE="/etc/systemd/system/${SERVICE_NAME}.service"
-CONFIG_FILE="/etc/zivpn/config.json"
+CONFIG_FILE="/etc/udp-zivpn/server.json"
 
 show_header() {
   clear

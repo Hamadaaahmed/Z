@@ -75,7 +75,13 @@ write_default_config() {
 {
   "listen": ":7300",
   "cert": "${CERT_FILE}",
-  "key": "${KEY_FILE}"
+  "key": "${KEY_FILE}",
+  "auth": {
+    "mode": "userpass",
+    "userpass": {
+      "admin": "123456"
+    }
+  }
 }
 EOF
   fi
